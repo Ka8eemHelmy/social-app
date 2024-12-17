@@ -11,7 +11,7 @@ class AnimalsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.cyan,
-        title: Text(
+        title: const Text(
           'Poke App',
           style: TextStyle(
             color: Colors.white,
@@ -20,7 +20,7 @@ class AnimalsScreen extends StatelessWidget {
       ),
       body: GridView.count(
         crossAxisCount: 2,
-        padding: EdgeInsets.all(12),
+        padding: const EdgeInsets.all(12),
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
         children: [

@@ -14,7 +14,7 @@ class Screen12 extends StatelessWidget {
               onPressed: () {
                 Scaffold.of(context).openDrawer();
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.ac_unit_rounded,
               ),
             );
@@ -30,15 +30,15 @@ class Screen12 extends StatelessWidget {
               children: [
                 ListTile(
                   contentPadding: EdgeInsets.zero,
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     backgroundImage: AssetImage('assets/images/sun-flour.jpg'),
                     radius: 35,
                   ),
-                  title: Text(
+                  title: const Text(
                     'Kareem Ahmed',
                     style: TextStyle(color: Colors.white),
                   ),
-                  subtitle: Text(
+                  subtitle: const Text(
                     'Ka8eem@gmail.com',
                     style: TextStyle(color: Colors.white),
                   ),
@@ -46,28 +46,28 @@ class Screen12 extends StatelessWidget {
                     onPressed: () {},
                     icon: CircleAvatar(
                       backgroundColor: Colors.grey[400]!.withOpacity(0.4),
-                      child: Icon(Icons.add),
+                      child: const Icon(Icons.add),
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 ListTile(
                   onTap: () {},
-                  leading: Icon(Icons.person),
-                  title: Text('Profile'),
-                  subtitle: Text('Update your profile'),
-                  trailing: Icon(Icons.add),
+                  leading: const Icon(Icons.person),
+                  title: const Text('Profile'),
+                  subtitle: const Text('Update your profile'),
+                  trailing: const Icon(Icons.add),
                 ),
                 ListTile(
                   onTap: () {},
-                  leading: Icon(Icons.person),
-                  title: Text('Profile'),
-                  subtitle: Text('Update your profile'),
-                  trailing: Icon(Icons.add),
+                  leading: const Icon(Icons.person),
+                  title: const Text('Profile'),
+                  subtitle: const Text('Update your profile'),
+                  trailing: const Icon(Icons.add),
                 ),
-                Divider(
+                const Divider(
                   indent: 20,
                   endIndent: 20,
                 ),
@@ -92,7 +92,7 @@ class Screen12 extends StatelessWidget {
         width: double.infinity,
         child: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsetsDirectional.only(start: 10),
+            padding: const EdgeInsetsDirectional.only(start: 10),
             child: Column(
               // mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -100,7 +100,7 @@ class Screen12 extends StatelessWidget {
               children: [
                 TextButton(
                   onPressed: () {
-                    print('Kareem');
+                    // print('Kareem');
                   },
                   child: Container(
                     color: Colors.grey,
@@ -109,7 +109,7 @@ class Screen12 extends StatelessWidget {
                         Container(
                           height: 200,
                           width: 200,
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           alignment: AlignmentDirectional.center,
                           decoration: BoxDecoration(
                             color: Colors.red,
@@ -126,7 +126,7 @@ class Screen12 extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SingleChildScrollView(
+                        const SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -163,9 +163,9 @@ class Screen12 extends StatelessWidget {
                         ),
                         InkWell(
                           onTap: () {
-                            print('Image tapped');
+                            // print('Image tapped');
                           },
-                          child: CircleAvatar(
+                          child: const CircleAvatar(
                             backgroundColor: Colors.red,
                             radius: 50,
                             backgroundImage:
@@ -180,7 +180,7 @@ class Screen12 extends StatelessWidget {
                             // ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         SizedBox(
@@ -190,11 +190,11 @@ class Screen12 extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => ChatScreen(),
+                                  builder: (context) => const ChatScreen(),
                                 ),
                               );
                             },
-                            child: Row(
+                            child: const Row(
                               children: [
                                 Icon(
                                   Icons.arrow_circle_down,
@@ -216,43 +216,43 @@ class Screen12 extends StatelessWidget {
                   color: Colors.red,
                   child: Column(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           'Welcome',
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           'Welcome',
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           'Welcome',
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           'Welcome',
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                     ],
@@ -260,119 +260,119 @@ class Screen12 extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Welcome',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 MaterialButton(

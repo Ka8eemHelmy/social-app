@@ -33,7 +33,7 @@ class StatusSection extends StatelessWidget {
         );
       },
       separatorBuilder: (context, index) {
-        return SizedBox(
+        return const SizedBox(
           width: 12,
         );
       },

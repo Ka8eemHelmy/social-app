@@ -23,7 +23,7 @@ class _NameGameScreenState extends State<NameGameScreen> {
                 names.clear();
               });
             },
-            child: Text('Reset'),
+            child: const Text('Reset'),
           ),
         ],
       ),
@@ -33,11 +33,11 @@ class _NameGameScreenState extends State<NameGameScreen> {
             Expanded(
               child: Visibility(
                 visible: names.isNotEmpty,
-                replacement: Center(
+                replacement: const Center(
                   child: Text('Please, Enter Some Names'),
                 ),
                 child: ListView.separated(
-                  padding: EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(8),
                   itemCount: names.length,
                   itemBuilder: (context, index) {
                     return Card(
@@ -50,13 +50,13 @@ class _NameGameScreenState extends State<NameGameScreen> {
                           });
                         },
                         child: Text(names[index],
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 25,
                             )),
                       ),
                     );
                   },
-                  separatorBuilder: (context, index) => SizedBox(
+                  separatorBuilder: (context, index) => const SizedBox(
                     height: 12,
                   ),
                 ),
@@ -69,7 +69,7 @@ class _NameGameScreenState extends State<NameGameScreen> {
                     controller: input,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 12,
                 ),
                 ElevatedButton(
@@ -79,7 +79,7 @@ class _NameGameScreenState extends State<NameGameScreen> {
                       input.clear();
                     });
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.send,
                   ),
                 ),

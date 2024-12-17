@@ -18,7 +18,7 @@ class ChatWidget extends StatelessWidget {
           image: chat.image,
           isOnline: chat.isOnline,
         ),
-        SizedBox(
+        const SizedBox(
           width: 12,
         ),
         Expanded(
@@ -27,7 +27,7 @@ class ChatWidget extends StatelessWidget {
             children: [
               Text(
                 chat.name,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 18,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class ChatWidget extends StatelessWidget {
               ),
               Text(
                 chat.message,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   color: Colors.white,
                 ),
@@ -45,12 +45,12 @@ class ChatWidget extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 12,
         ),
         Text(
           chat.date,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.grey,
           ),
         ),

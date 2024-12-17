@@ -30,7 +30,7 @@ class TabBarScreen extends StatelessWidget {
             ],
           ),
         ),
-        body: SafeArea(
+        body: const SafeArea(
           child: Column(
             children: [
               Expanded(

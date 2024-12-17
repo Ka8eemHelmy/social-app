@@ -1,6 +1,5 @@
 import 'package:first_app_122/screens/home/conversations_section.dart';
 import 'package:first_app_122/screens/home/status_section.dart';
-import 'package:first_app_122/screens/home/widgets/chat_widget.dart';
 import 'package:flutter/material.dart';
 
 class ChatScreen extends StatelessWidget {
@@ -12,12 +11,12 @@ class ChatScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        leading: CircleAvatar(
+        leading: const CircleAvatar(
           backgroundImage: NetworkImage(
             'https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg',
           ),
         ),
-        title: Text(
+        title: const Text(
           'Chats',
           style: TextStyle(
             color: Colors.white,
@@ -30,7 +29,7 @@ class ChatScreen extends StatelessWidget {
             onPressed: () {},
             icon: CircleAvatar(
               backgroundColor: Colors.grey.withOpacity(0.5),
-              child: Icon(
+              child: const Icon(
                 Icons.camera_alt,
                 color: Colors.white,
               ),
@@ -40,7 +39,7 @@ class ChatScreen extends StatelessWidget {
             onPressed: () {},
             icon: CircleAvatar(
               backgroundColor: Colors.grey.withOpacity(0.5),
-              child: Icon(
+              child: const Icon(
                 Icons.edit,
                 color: Colors.white,
               ),
@@ -50,20 +49,20 @@ class ChatScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
-          SearchBar(
+          const SearchBar(
             hintText: 'Search',
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           SizedBox(height: 120, child: StatusSection()),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
-          Expanded(child: ConversationsSection()),
+          const Expanded(child: ConversationsSection()),
         ],
       ),
     );

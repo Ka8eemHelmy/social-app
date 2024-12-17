@@ -24,12 +24,12 @@ class AnimalCardWidget extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 12,),
+            const SizedBox(height: 12,),
             Expanded(
               child: Text(
                 animal.name,
                 // 'Bulbasaur',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),

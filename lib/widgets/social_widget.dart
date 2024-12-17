@@ -25,7 +25,7 @@ class SocialWidget extends StatelessWidget {
         Container(
           width: 50,
           height: 50,
-          padding: EdgeInsets.all(8),
+          padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
             color: backgroundColor,
@@ -34,7 +34,7 @@ class SocialWidget extends StatelessWidget {
             image,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 6,
         ),
         Expanded(

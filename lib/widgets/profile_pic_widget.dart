@@ -25,7 +25,7 @@ class ProfilePicWidget extends StatelessWidget {
         // if(isOnline)
         Visibility(
           visible: isOnline,
-          child: PositionedDirectional(
+          child: const PositionedDirectional(
             bottom: 0,
             end: 0,
             child: CircleAvatar(

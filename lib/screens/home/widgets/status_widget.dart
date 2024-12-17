@@ -18,12 +18,12 @@ class StatusWidget extends StatelessWidget {
           image: chat.image,
           isOnline: chat.isOnline,
         ),
-        SizedBox(
+        const SizedBox(
           height: 2,
         ),
         Text(
           chat.name,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 20,
           ),

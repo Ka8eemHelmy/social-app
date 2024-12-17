@@ -13,12 +13,12 @@ class AnimalDetailsScreen extends StatelessWidget {
       backgroundColor: Colors.cyan,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.white,
         ),
         title: Text(
           animal.name,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
           ),
         ),
@@ -28,7 +28,7 @@ class AnimalDetailsScreen extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: Card(
-              margin: EdgeInsetsDirectional.only(
+              margin: const EdgeInsetsDirectional.only(
                 start: 12,
                 end: 12,
                 bottom: 100,
@@ -36,24 +36,24 @@ class AnimalDetailsScreen extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                   ),
                   Text(
                     animal.name,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   if (animal.height != null)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'Height: ',
                           style: TextStyle(
                             fontSize: 16,
@@ -62,20 +62,20 @@ class AnimalDetailsScreen extends StatelessWidget {
                         ),
                         Text(
                           animal.height ?? '',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 16,
                           ),
                         ),
                       ],
                     ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   if (animal.weight != null)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'Weight: ',
                           style: TextStyle(
                             fontSize: 16,
@@ -84,16 +84,16 @@ class AnimalDetailsScreen extends StatelessWidget {
                         ),
                         Text(
                           animal.weight ?? '',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 16,
                           ),
                         ),
                       ],
                     ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
-                  Text(
+                  const Text(
                     'Types:',
                     style: TextStyle(
                       fontSize: 16,

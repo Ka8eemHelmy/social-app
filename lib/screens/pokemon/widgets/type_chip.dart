@@ -12,7 +12,7 @@ class TypeChip extends StatelessWidget {
       backgroundColor: color,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
-        side: BorderSide(color: Colors.transparent),
+        side: const BorderSide(color: Colors.transparent),
       ),
     );
   }

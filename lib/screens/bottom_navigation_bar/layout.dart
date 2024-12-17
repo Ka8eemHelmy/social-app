@@ -13,10 +13,10 @@ class HomeLayout extends StatefulWidget {
 
 class _HomeLayoutState extends State<HomeLayout> {
   List<Widget> screens = [
-    AnimalsScreen(),
-    ChatScreen(),
-    NameGameScreen(),
-    SocialScreen(),
+    const AnimalsScreen(),
+    const ChatScreen(),
+    const NameGameScreen(),
+    const SocialScreen(),
   ];
 
   int index = 0;
@@ -35,7 +35,7 @@ class _HomeLayoutState extends State<HomeLayout> {
             index = value;
           });
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home_outlined,

@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Simple ListView')),
+        appBar: AppBar(title: const Text('Simple ListView')),
         body: ListView.separated(
-          padding: EdgeInsets.all(12),
+          padding: const EdgeInsets.all(12),
           itemCount: 10,
           itemBuilder: (context, index) {
-            return Row(
+            return const Row(
               children: [
                 CircleAvatar(),
                 SizedBox(width: 12,),
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
               ],
             );
           }, separatorBuilder: (BuildContext context, int index) {
-            return SizedBox(height: 12,);
+            return const SizedBox(height: 12,);
         },
         ),
       ),

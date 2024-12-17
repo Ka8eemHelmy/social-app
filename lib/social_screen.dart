@@ -8,8 +8,8 @@ class SocialScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Padding(
-          padding: const EdgeInsets.all(6),
+        leading: const Padding(
+          padding: EdgeInsets.all(6),
           child: CircleAvatar(
             backgroundColor: Colors.grey,
             child: CircleAvatar(
@@ -22,9 +22,9 @@ class SocialScreen extends StatelessWidget {
             ),
           ),
         ),
-        title: Text('Transfer Request'),
+        title: const Text('Transfer Request'),
         centerTitle: true,
-        actions: [
+        actions: const [
           CircleAvatar(
             backgroundColor: Colors.grey,
             radius: 20,
@@ -47,7 +47,7 @@ class SocialScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Align(
+            const Align(
               alignment: AlignmentDirectional.centerEnd,
               child: Text(
                 'Today, 25, Jun',
@@ -57,7 +57,7 @@ class SocialScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             SocialWidget(
@@ -69,7 +69,7 @@ class SocialScreen extends StatelessWidget {
               date: '21. Jun, 2024',
               cardType: 'Debit Card',
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             SocialWidget(
@@ -81,7 +81,7 @@ class SocialScreen extends StatelessWidget {
               date: '22. Jun, 2024',
               cardType: 'Debit Card',
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             SocialWidget(

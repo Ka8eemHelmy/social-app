@@ -31,21 +31,21 @@ class _LoginScreenState extends State<LoginScreen> {
                     'https://www.pngkey.com/png/full/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png',
                     height: 150,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     'Login',
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       hintText: 'Email',
                     ),
                     validator: (value) {
@@ -58,12 +58,12 @@ class _LoginScreenState extends State<LoginScreen> {
                       }
                     },
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   TextFormField(
                     controller: username,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       hintText: 'Username hint',
                       label: Text('Username'),
                       border: OutlineInputBorder(),
@@ -100,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       }
                     },
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   TextFormField(
@@ -114,29 +114,29 @@ class _LoginScreenState extends State<LoginScreen> {
                     },
                     decoration: InputDecoration(
                       hintText: 'Password hint',
-                      label: Text('Password'),
-                      border: OutlineInputBorder(),
-                      focusedBorder: OutlineInputBorder(
+                      label: const Text('Password'),
+                      border: const OutlineInputBorder(),
+                      focusedBorder: const OutlineInputBorder(
                           borderSide: BorderSide(
                         color: Colors.green,
                         width: 2,
                       )),
-                      errorBorder: OutlineInputBorder(
+                      errorBorder: const OutlineInputBorder(
                         borderSide: BorderSide(
                           color: Colors.red,
                         ),
                       ),
-                      focusedErrorBorder: OutlineInputBorder(
+                      focusedErrorBorder: const OutlineInputBorder(
                         borderSide: BorderSide(
                           color: Colors.red,
                           width: 2,
                         ),
                       ),
-                      disabledBorder: OutlineInputBorder(
+                      disabledBorder: const OutlineInputBorder(
                           borderSide: BorderSide(
                         color: Colors.teal,
                       )),
-                      prefixIcon: Icon(Icons.password),
+                      prefixIcon: const Icon(Icons.password),
                       // prefix: Text('Password: '),
                       suffixIcon: IconButton(
                         onPressed: () {
@@ -156,14 +156,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     obscureText: hidePassword,
                     obscuringCharacter: '#',
                     onTap: () {
-                      print('password tapped');
+                      // print('password tapped');
                     },
                     onFieldSubmitted: (value) {
-                      print('Password: $value');
+                      // print('Password: $value');
                       doLogin();
                     },
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   TextFormField(
@@ -182,33 +182,33 @@ class _LoginScreenState extends State<LoginScreen> {
                     //     print('Finished');
                     // },
                     onChanged: (value) {
-                      print('Date: $value');
+                      // print('Date: $value');
                     },
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       hintText: 'Date',
                     ),
                     // readOnly: true,
                     // enabled: false,
                     keyboardType: TextInputType.none,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   TextFormField(
                     onTap: () {},
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       hintText: 'Phone',
                     ),
                     keyboardType: TextInputType.phone,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   ElevatedButton(
                     onPressed: () {
                       doLogin();
                     },
-                    child: Text(
+                    child: const Text(
                       'Login',
                     ),
                   ),

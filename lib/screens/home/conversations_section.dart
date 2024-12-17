@@ -13,7 +13,7 @@ class ConversationsSection extends StatelessWidget {
           chat: chats[index],
         );
       },
-      separatorBuilder: (context, index) => SizedBox(
+      separatorBuilder: (context, index) => const SizedBox(
         height: 12,
       ),
       itemCount: chats.length,
